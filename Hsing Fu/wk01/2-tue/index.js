@@ -34,3 +34,14 @@ var language = ["javascript", "ruby", "spanish"];
 for (var counter=1; counter <= language.length; counter++){
 console.log("My #"+ counter + " language is " + language[counter-1]);
 }
+
+// money tree
+var numRows = 5; // cannot be greater than 10, console out of space
+var length = Math.pow(numRows,2);
+
+for (var row=0; row<numRows; row++){
+	var numDollars = row*2 + 1;
+	var numBlanks = (length - numDollars)/2;
+	console.log( " ".repeat(numBlanks) + "$".repeat(numDollars) + " ".repeat(numBlanks));
+}
+
