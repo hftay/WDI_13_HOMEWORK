@@ -16,6 +16,18 @@ console.log(igdArray[0]);
 console.log(igdArray[1]);
 console.log(igdArray[2]);
 
+console.log(igdArray.join('\n')); //joining each element with a new line
+
+console.log(igdArray);
+
+
+for (var index = 0; index < igdArray.length; index ++){
+	//debugger
+	console.log(index);
+}
+
+
+
 // The Reading List
 var book1 ={
 	title: "Moonwalking with Einstein",
@@ -44,6 +56,30 @@ for (var i=0; i<bookArray.length; i++){
 		console.log("You still need to read " + bookArray[i].title + " by " + bookArray[i].author);
 }
 
+// Alternative Book List
+
+var books =[
+{
+	title: "Why's poignant guide to ruby",
+	author: "Why",
+	alreadyRead: true
+},{
+	title: "Javascript & JQuery",
+	author: "some guy called John D",
+	alreadyRead: false
+}
+]
+
+for (var i = 0; i<books.length; i++){
+	var descrip = books[i].title + " by " + books[i].author	
+	if(books[i].alreadyRead === true){
+		console.log("You already read " + descrip);
+	} else {
+		console.log("You still need to read " + descrip);
+	}
+}
+
+
 // The Movie Database
 
 starsArray1=[" Brad Pitt", " Christoph Waltz", " Melanie Laurent"];
@@ -61,9 +97,14 @@ var movie2 ={
 	stars: starsArray2
 }
 
+//var x = movieInfo(movie){
+//}
+
 function movieInfo(movie){
-	console.log(movie.title + " lasts for " + movie.duration + " minutes. Stars:" + movie.stars);
+	console.log(movie.title + " lasts for " + movie.duration + " minutes. Stars:" + movie.stars + ".");
 }
 
 movieInfo(movie1)
 movieInfo(movie2)
+
+//console.log(movieInfo(movie1));
