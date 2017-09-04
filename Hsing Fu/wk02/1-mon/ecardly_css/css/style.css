@@ -1,0 +1,80 @@
+body {
+	background-color: lightgrey;
+	box-sizing: border-box;
+}
+
+header {
+	background-image: "images/background.jpg";
+	background-image: url(http://lorempixel.com/400/200/sports/1/);
+	background-repeat: repeat-x;
+	background-size: 25%;
+}
+
+.container{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+main {
+	display: inline-block;	
+	background-color: white;
+	width: 600px;
+	border: 10px solid white;
+	padding: 20px;
+	margin-left: 150px;
+	margin-bottom: 30px;
+}
+
+div>img {
+	margin: 0 auto;
+	display: block;
+}
+
+p{
+	max-width: 600px;
+	font-size: 14px;
+}
+.links {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	color: rgb(246,48,0);
+}
+
+.postedby {
+	font-size: 14px;
+	border-top: 1px dotted black;
+	border-bottom: 1px solid black;
+	padding: 5px;
+}
+
+.column {
+	display: inline-block;
+	background-color: white;
+	max-width: 250px;
+	padding: 30px 10px;
+	margin: 0 150px 0 15px;
+	vertical-align: top;
+}
+
+.sideimg{
+	padding: 15px;
+}
+
+ul{
+	padding-left: 10px;
+}
+
+li {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	list-style: none;
+}
+
+footer {
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}

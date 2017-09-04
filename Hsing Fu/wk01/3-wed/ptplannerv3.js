@@ -1,7 +1,8 @@
-console.log("PT PLANNER BREVITY");
+console.log("PT PLANNER v3");
 
-var origin = "Tooronga";
-var destination = "Flagstaff";
+var origin = "Glenferrie";
+var destination = "Richmond";
+
 var trainNetwork={
 	"Alamein": ["Flinders Street", "Richmond", "East Richmond", "Burnley", "Hawthorn", "Glenferrie"],
  	"GlenWaverly": ["Flagstaff", "Melbourne Central", "Parliament", "Richmond", "Kooyong", "Tooronga"],
@@ -54,7 +55,7 @@ if (originLine === destLine){
 	if(originSliceStart>destIndex){
 		var originIndex = originLine.length-1 - originIndex;
 		var destIndex = originLine.length-1 - destIndex;
-		console.log (originLine.reverse());
+		originLine.reverse();
 		var originSliceStart = originIndex;
 		var originSliceEnd = destIndex;
 	}
@@ -85,7 +86,7 @@ else if(originLine !== destLine){
 	if(originSliceStart>originSliceEnd){
 		var originIndex = originLine.length-1 - originIndex;
 		var originRichmondIndex = originLine.length-1 - originRichmondIndex;
-		console.log (originLine.reverse());
+		originLine.reverse();
 		var originSliceStart = originIndex;
 		var originSliceEnd = originRichmondIndex;
 	}
@@ -98,7 +99,7 @@ else if(originLine !== destLine){
 	if(destSliceStart>destSliceEnd){
 		var destIndex = destLine.length-1 - destIndex;
 		var destRichmondIndex = destLine.length-1 - destRichmondIndex;
-		console.log (destLine.reverse());
+		destLine.reverse();
 		var destSliceStart = destRichmondIndex;
 		var destSliceEnd = destIndex;
 	}
@@ -110,7 +111,7 @@ else if(originLine !== destLine){
 	var nameOfAllStopsWithArrows = nameOfAllStops.join(" -----> ");
 }
 
-//	all together now
+//	all together now...
 console.log("================RECOMMENDED ROUTE================");
 console.log("\n\n" + "origin: " + origin);
 console.log("destination: " + destination + "\n\n");
