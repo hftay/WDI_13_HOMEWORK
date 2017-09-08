@@ -51,20 +51,24 @@ console.log(fruits);
 // the global variable is passed through a function;
 // an array is not a primitive data type and can be modified in a function.
 
-var fruits = 'banana';
-
-var addFruit = function(arr) {
-  arr.concat('mango');
-}
-
-var result = addFruit(fruits);
-console.log(result);
 
 
-var fruits = 'banana';
 
-var result = fruits.concat('mango');
 
-console.log(result);
+// var fruits = 'banana';
+
+// var addFruit = function(arr) {
+//   arr.concat('mango');
+// }
+
+// var result = addFruit(fruits);
+// console.log(result);
+
+// //
+// var fruits = 'banana';
+// var result = fruits.concat('mango');
+// console.log(result);
+
+//
 
 

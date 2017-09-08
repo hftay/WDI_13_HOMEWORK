@@ -1,6 +1,6 @@
 console.log("PT PLANNER v4");
 
-var origin = "Tooronga";
+var origin = "Flagstaff";
 var destination = "Glenferrie";
 
 var trainNetwork={

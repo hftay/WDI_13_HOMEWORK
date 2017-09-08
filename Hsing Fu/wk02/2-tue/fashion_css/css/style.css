@@ -1,0 +1,104 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	width: 80%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+h1{
+	display: inline-block;
+	width: 25%;
+	color: red;
+	margin-bottom: 0.2em;
+}
+
+.tagline{
+	display: inline-block;
+	color: lightgrey;
+	width: 74%;
+	font-size: 1.2em ;
+}
+
+.buttons{
+	background-color: black;
+	display: inline-block;
+	width: 16.1%;
+	color: lightgrey;
+	padding: 1.2em;
+	/*min-height: 5em;*/
+	text-align: center;
+}
+
+section{
+	background-color: white;
+	display: inline-block;
+	vertical-align: top;
+	width: 65%;	
+}
+
+section article {
+	border-bottom: 1px solid black;
+	margin-top: 2em;
+}
+
+.firstletter {
+	font-size: 3em;
+	display: inline;
+	float: left;
+}
+
+p{
+	margin: 0;
+}
+
+.date{
+	color: lightgrey;
+	font-size: 1.5em;
+}
+
+img {
+	max-width: 100%;
+}
+
+.continue{
+	text-align: right;
+	color: red;
+	font-style: bold;
+	padding: 1em 0;
+}
+
+aside{
+	background-color: white;
+	display: inline-block;
+	width: 34%;
+	margin-top: 2em;
+	padding: 0 1em;
+}
+
+.ad{
+
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 1em 0;
+}
+
+h3{
+	color: lightgrey;
+}
+
+li{
+	color: pink;
+}
+
+.footerlinks{
+	background-color: white;
+	display: inline-block;
+	/*width: 12%;*/
+	color: pink;
+	border-right: 1px solid pink; 
+	padding: 0.2em;
+	margin: 1em 0;
+}
