@@ -1,0 +1,57 @@
+*{
+	box-sizing: border-box;
+	/*border: 0.1px solid white;*/
+}
+
+body{
+	background-color: black;
+	color: white; 
+}
+
+.coin-img-container{
+	display: inline-block;
+	width: 15%;
+	position: absolute;
+	bottom: 50%;
+	right: 45%;
+	text-align: center
+}
+
+.score-container{
+	display: inline-block;
+	width: 15%;
+	vertical-align: top;
+}
+
+.tally-container{
+	display: inline-block;
+	/*width: 80%;*/
+	vertical-align: top;
+	position: absolute;
+	bottom: 3%;
+	right: 3%;
+
+}
+
+.coin-flip-result{
+	display: inline-block;
+}
+
+img {
+	width: 100%;
+	cursor: pointer;
+}
+
+#pile-of-gold{
+	width:15%;
+	position: absolute;
+	bottom: 45%;
+	right: 40%;
+}
+
+#rotating-coin{
+	width:15%;
+	position: absolute;
+	bottom: 60%;
+	right: 40%;
+}

@@ -1,0 +1,18 @@
+body{
+	background-color: #6efa9b; 
+	/*background-color: #03e1be;*/
+	text-align: center;
+	margin: 10em auto;
+}
+
+.board{
+	font-size: 5em;
+}
+
+.game-won{
+	font-size: 8em;
+}
+
+input {
+	text-align: center;
+}
