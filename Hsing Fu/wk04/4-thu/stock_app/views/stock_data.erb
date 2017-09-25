@@ -1,0 +1,19 @@
+
+
+	<h1> Stock Summary: <br> </h1>
+
+	<h2>
+
+	<%= "Name: #{@result[@stock_ticker].name}" %>
+	<br>
+	<%= "Price: #{@result[@stock_ticker].lastTrade}" %>
+	<br>
+	<%= "Change: #{@result[@stock_ticker].change}" %>
+	<br>
+	<%= "Volume: #{@result[@stock_ticker].volume}" %>
+
+	</h1>
+	
+	<h3>Rest of the gibberish: </h3>
+	<%=  @result[@stock_ticker]  %>
+

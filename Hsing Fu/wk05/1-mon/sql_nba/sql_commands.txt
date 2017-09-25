@@ -1,0 +1,69 @@
+
+
+Figure out the appropriate SQL commands to find out the following, and keep track of them in the file called sql_commands.txt
+
+to view table:
+`SELECT * from players`
+________________________________________________________________
+All columns for all players from the New York Knicks (NYK)
+
+SELECT * from players 
+WHERE team='NYK';
+________________________________________________________________
+All columns for all players from the Indiana Packers (IND) who are under 26 years old
+
+SELECT * from players 
+WHERE team='IND' AND age<26;
+________________________________________________________________
+All columns for all players, ordered from least points scored to most points scored
+
+SELECT * from players 
+ORDER BY points ASC;
+________________________________________________________________
+Name and Points per game (points/games), for the players with the top 20 points per game
+
+// how do you name the new ppg column?
+SELECT name, points/games from players
+ORDER BY points/games DESC
+LIMIT 20;
+________________________________________________________________
+The average age for all players
+
+SELECT AVG(age) from players;
+________________________________________________________________
+The average age for all players on the Oklahoma City Thunder (OKC)
+
+SELECT AVG(age) from players 
+WHERE team='OKC';
+________________________________________________________________
+The average age for all players who played more than 40 games
+
+SELECT AVG(age) from players 
+WHERE games>40;
+________________________________________________________________
+The team and total points scored from all players on that team (team points), ordered from most team points to least
+
+SELECT team, SUM(points) from players
+GROUP BY team
+ORDER BY SUM(points) DESC;
+________________________________________________________________
+Age and the average points per game for that age, ordered from youngest to oldest
+
+SELECT age, AVG(points/games) from players
+GROUP BY age
+ORDER BY age ASC;
+________________________________________________________________
+Team and the the number of players who score above 12 points per game on that team, ordered from most to least
+
+SELECT team, name, points/games from players
+WHERE points/games > 12
+ORDER BY points/games DESC;
+
+SELECT team, COUNT(team) from players
+WHERE points/games > 12
+GROUP BY team
+ORDER BY COUNT(team) DESC;
+
+
+
+

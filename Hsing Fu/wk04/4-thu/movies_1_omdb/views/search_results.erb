@@ -1,0 +1,12 @@
+
+<h1>Search Result(s): </h1>
+
+<% @search_results.each do |search_result| %>
+	
+	<% @movie_title = search_result["Title"]%>
+	
+	<p> <a href="/about?movie_title=<%=@movie_title%>"> <%= search_result["Title"]%> </a> </p>
+	<!-- <p>  Year Released: <%= search_result["Year"]%>  </p> -->
+	<!-- <img src="<%=search_result["Poster"]%>" alt="poster"> -->
+<% end %>
+
