@@ -38,11 +38,17 @@ $('.search-btn').on("click", function(event){
 	event.preventDefault(); //stop form direct to server
 	var $movieInput = $('input').val();
 
-	var options = {
-		url: "http://omdbapi.com/?s=" + $movieInput + "&apikey=" + APIKEY,
+	// var options = {
+	// 	url: "http://omdbapi.com/?s=" + $movieInput + "&apikey=" + APIKEY,
+	// 	method: 'get',
+	// 	data: {}
+	// }
+
+	var options = { // alternative neater way to write ajax
+		url: "http://omdbapi.com/",
 		method: 'get',
-		data: {}
-	}
+		data: { apikey: '2f6435d9', s: $movieInput} // data to pass into url
+	}	
 
 	var appendSearchResults = function(response){
 		var $searchResults = $('<div>').prop({ class:"search-results" });
