@@ -32,7 +32,6 @@ createDOM();
 
 var $gifInput = $('input');
 var $gifContainer = $('.gif-container')
-
 var ajaxLimit = 10;
 var ajaxCounter = 0;
 
@@ -59,7 +58,6 @@ var ajaxCall = function(ajaxCounter){
 		});
 	}
 	$.ajax(options).done(appendSearchResults);
-	// $('input').addClass("input-hide");
 }
 
 

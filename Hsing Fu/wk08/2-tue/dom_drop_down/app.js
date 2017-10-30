@@ -1,4 +1,3 @@
-
 console.log ('cities');
 
 cityNames = ["Austin", "Los Angeles", "New York City", "San Francisco", "Sydney"];
