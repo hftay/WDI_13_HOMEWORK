@@ -1,0 +1,28 @@
+edit all you want
+
+
+<form action="/dishes/<%= @dish.id %>" method="post">
+	<input type="hidden" name="_method" value="put">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	
+	<label for="">name</label>
+	<input type="text" name="name" value="<%= @dish.name %>">
+
+	<label for="">image_url</label>
+	<input type="text" name="image_url" value="<%= @dish.image_url %>">
+
+	<button type="submit">update dish</button>
+
+</form>
+
+
+<%= form_tag "/venue/#{@dish.id}", method: 'put' do %>
+
+	<label for="">venue_name</label>
+	<input type="text" name="venue_name" value="<%= @venue.name %>">
+	<label for="">venue_address</label>
+	<input type="text" name="venue_address" value="<%= @venue.address %>">
+	<button type="submit">update venue</button>
+
+<%end%>
+

@@ -1,0 +1,19 @@
+
+<h1>the-index</h1>
+
+<a href="/dishes/new">create a dish</a>
+
+<% @dishes.each do |dish| %>
+	<h3><%= dish.name %></h3>	
+	<a href="/dishes/<%= dish.id %>">show</a>
+	<a href="/dishes/<%= dish.id %>/edit">edit</a>	
+
+	<form style="display: inline-block;" action="/dishes/<%= dish.id %>" method="post">
+		<input type="hidden" name="_method" value="delete">
+		<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+		<button type="submit">delete</button>
+	</form>
+
+<%end%>
+
+

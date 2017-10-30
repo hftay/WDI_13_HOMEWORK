@@ -1,0 +1,21 @@
+let's make a new dish!
+
+<form action="/dishes" method="post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	
+	<label for="">name</label>
+	<input type="text" name="name">
+
+	<label for="">image_url</label>
+	<input type="text" name="image_url">
+
+	<br>
+
+	<label for="">venue_name</label>
+	<input type="text" name="venue_name">
+	<label for="">venue_address</label>
+	<input type="text" name="venue_address">
+
+	<button type="submit">create</button>
+
+</form>

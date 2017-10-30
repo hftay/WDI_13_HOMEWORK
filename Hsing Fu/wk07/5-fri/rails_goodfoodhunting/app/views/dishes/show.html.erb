@@ -1,0 +1,24 @@
+
+
+<h3><%= @dish.name %></h3>
+
+<% if @dish.venue %>
+	<div> <%= @dish.venue.name %>, <%= @dish.venue.address %> </div>
+<%end%>
+
+<img src="<%= @dish.image_url %>" alt="<%= @dish.image_url %>">
+
+
+
+<% @comments.each do |comment| %>
+	<p><%= comment.content %></p>
+<%end%>
+
+<%= form_tag '/comments', method: 'post' do %>
+	<input type="hidden" name="dish_id" value="<%= params[:id] %>">
+	<label for="">comment</label>
+	<textarea name="content"></textarea>
+
+	<button type="submit">post comment</button>
+<%end%>
+
