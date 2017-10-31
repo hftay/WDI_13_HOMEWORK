@@ -3,7 +3,8 @@
 // import fs from 'fs';
 var fs = require('fs'); 
 
-var output = fs.readFileSync('postcode_mini.csv', 'utf8')
+// var output = fs.readFileSync('postcode_mini.csv', 'utf8')
+var output = fs.readFileSync('postcode.csv', 'utf8')
 	.trim()
 	.replace(/["]/g,'')
 	.split('\n')
